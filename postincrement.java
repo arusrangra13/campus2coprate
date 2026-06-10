@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class Normaloperators {
+public class postincrement {
     public static void main(String[] args) {
         int a = 10;
         int b = 0;
