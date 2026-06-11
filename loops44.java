@@ -1,3 +1,4 @@
+// Skip 99 here from 1 to 101
 public class conditionalst {
     public static void main(String[] args) {
         // int i = 10;
