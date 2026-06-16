@@ -15,3 +15,6 @@ public class Arraybasic{
 
     }
 }
+
+// we can write also int [] marks = new int[5]; like this
+int marks[] = new int [5];
