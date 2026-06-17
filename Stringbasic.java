@@ -1,4 +1,4 @@
-
+// Simple String print
 import java.util.*;
 
 public class Stringbasic{
@@ -37,6 +37,41 @@ public class Stringbasic{
           for (int i = str.length()-1;i>=0;i--)
                 System.out.println(str.charAt(i));
         
+        }
+}
+
+//------------------------------------------------------------------------
+// Display Alternate Characters of a String
+import java.util.*;
+
+public class Stringbasic{
+      public static void main(String[] args){
+        String str = "Arus rangra";
+        System.out.println(str);
+        
+          for (int i = 0;i<str.length();i=i+2)
+                System.out.println(str.charAt(i));
+        
+        }
+}
+
+//------------------------------------------------------------------------
+//Check whether two strings are equal and explain String Pool vs new String()
+import java.util.*;
+
+public class Stringbasic{
+      public static void main(String[] args){
+        String str1 = "ARUS";
+        String str2 = "ARUS";
+
+        String str3 = new String("ARUS");
+
+        if(str1==str3){
+            System.out.println("true");
+        }else{
+            System.out.println("false");
+        }
+
         }
 }
 
