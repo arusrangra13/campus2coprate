@@ -75,3 +75,40 @@ public class Stringbasic{
         }
 }
 
+//--------------------------------------------------------------------------
+// should we use .equals() instead of == for Strings
+import java.util.*;
+public class Stringbasic{
+    public static void main(String[] args){
+        String str1 = "ARUS";
+        String str2 = "ARUS";
+
+        String str3 = new String("ARUS");
+
+        if(str1.equals(str3)){
+            System.out.println("true");
+        }else{
+            System.out.println("false");
+        }
+
+    }
+}
+
+//-----------------------------------------------------------------------------
+//Using Ignorecse 
+import java.util.*;
+public class Stringbasic{
+    public static void main(String[] args){
+        String str1 = "Arus";
+        String str2 = "ARUS";
+
+        String str3 = new String("ARUS");
+
+        if(str1.equalsIgnoreCase(str3)){
+            System.out.println("true");
+        }else{
+            System.out.println("false");
+        }
+
+    }
+}
