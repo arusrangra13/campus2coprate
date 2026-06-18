@@ -156,3 +156,44 @@ public class Stringbasic{
   }
 }
 
+//--------------------------------------------------------------------------------
+//Palindrone or not
+import java.util.*;
+public class Stringbasic{
+  public static void main(String[] args){
+    Scanner sc = new Scanner(System.in);
+
+    String str=sc.nextLine();
+    String str1="";
+    for(int i=str.length()-1;i>=0;i--)
+
+    str1=str1+str.charAt(i);
+    System.out.println(str1);
+
+    if(str.equals(str1)){
+      System.out.println("palindreome");
+    }
+    else{
+      System.out.println("Not palindrome");
+    }
+
+  }
+}
+
+//-------------------------------------------------------------------------------
+// Using str.startswith
+import java.util.*;
+public class Stringbasic{
+  public static void main(String[] args){
+    Scanner sc = new Scanner(System.in);
+    String str=sc.nextLine();
+    System.out.println("Orginal String:"+str);
+
+    if(str.startsWith("MR.")){
+      System.out.println("Success");
+    }else{
+      System.out.println("Not");
+    }
+  }
+}
+
