@@ -114,4 +114,26 @@ public class Stringbasic{
 }
 
 //------------------------------------------------------------------------------
-//
+// Input in String to red one word
+
+import java.util.*;
+public class Stringbasic{
+    public static void main(String[] args){
+     Scanner sc = new Scanner(System.in);
+
+     String str = sc.next();
+     System.out.println(str);
+    }
+}
+
+//------------------------------------------------------------------------------
+// To read the entire line
+import java.util.*;
+public class Stringbasic{
+    public static void main(String[] args){
+     Scanner sc = new Scanner(System.in);
+
+     String str = sc.nextLine();
+     System.out.println(str);
+    }
+}
