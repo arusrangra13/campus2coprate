@@ -55,3 +55,36 @@ public class Static {
         scanner.close();
     }
 }
+
+//========================================================================================================================
+// Arraylist
+import java.util.*;
+
+public class Static{
+    public static void main(String[] args){
+        ArrayList<Integer> al = new ArrayList<Integer>();
+        Scanner sc = new Scanner (System.in);
+        while(true){
+            int num=sc.nextInt();
+            if(num==-1)
+                break;
+            al.add(num);
+            System.out.println("Size/Number of element of AL=" +al.size());
+        }
+
+        al.add(0,44);
+
+        for (var num :al){
+            System.out.println(num);
+        }
+        al.set(2,1000);
+        for (var num :al){
+            System.out.println(num);
+    }
+    al.remove(3);
+       for (var num :al){
+            System.out.println(num);
+    }
+}
+}
+
