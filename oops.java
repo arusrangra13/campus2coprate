@@ -135,4 +135,40 @@ public class Oops {
         s1.printMarks();
     }
 }
+
+// ==================================================================================================
+// Parametrize constructer
+
+import java.util.*;
+
+    class Student {
+        String name;
+        int age;
+        int rollNumber;
+        int marks;
+
+        public void printAllInfo(){
+            System.out.println("Name os Student:"+name);
+            System.out.println("Age of Student:"+age);
+            System.out.println("Roll Number of Student:"+rollNumber);
+            System.out.println("Marks of Student:"+marks);
+            
+        }
+        
+        Student(String name,int age,int rollNumber,int marks){
+            this.name = name;
+            this.age = age;
+            this.rollNumber = rollNumber;
+            this.marks = marks;
+        }
+    }
+
+public class Oops {
+    public static void main(String[] args){
+        Student s1 = new Student("Arus Rangra", 20,21,90);
+
+        s1.printAllInfo();
+        
+    }
+}
  
