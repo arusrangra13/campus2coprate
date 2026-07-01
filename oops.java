@@ -171,4 +171,37 @@ public class Oops {
         
     }
 }
- 
+
+// ==================================================================================================
+// 2>Parametrize constructer
+
+import java.util.*;
+
+class MarutiCar{
+    String type;
+    String name;
+    String color;
+    int price;
+
+    public void printAllInfoOfCar(){
+        System.out.println("Type of car is:"+type);
+         System.out.println("Name of car is:"+name);
+          System.out.println("color of car is:"+color);
+           System.out.println("Price of car is:"+price);
+    }
+    MarutiCar(String type,String name, String color ,int price){
+        this.type = type;
+        this.name = name;
+        this.color = color;
+        this.price =price;
+    }
+
+
+}
+public class Oops {
+    public static void main(String[] args){
+        MarutiCar c1 = new  MarutiCar("sedan","Swift dizre","Silver grey",600000);
+
+        c1.printAllInfoOfCar();
+    }
+}
