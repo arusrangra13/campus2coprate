@@ -90,4 +90,49 @@ public class Oops {
         pen2.printPrice();
     }
 }
+
+//===========================================================================
+import java.util.*;
+
+    class Student {
+        String name;
+        int age;
+        int rollNumber;
+        int marks;
+
+        public void printName(){
+            System.out.println(this.name);
+        }
+
+        public int printAge(){
+            System.out.println(this.age);
+            return age;
+        }
+
+        public int printRollNumber(){
+            System.out.println(this.rollNumber);
+            return rollNumber;
+        }
+        public int printMarks(){
+            System.out.println(this.marks);
+            return marks;
+        }
+
+    }
+
+public class Oops {
+    public static void main(String[] args){
+        Student s1 = new Student();
+
+        s1.name = "Arus rangra";
+        s1.age = 20;
+        s1.rollNumber = 2330076;
+        s1.marks = 70;
+
+        s1.printName();
+        s1.printAge();
+        s1.printRollNumber();
+        s1.printMarks();
+    }
+}
  
