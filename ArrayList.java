@@ -200,5 +200,55 @@ public class arraylist {
         System.out.println();
     }
 }
+
+//======================================================================================
+// sorting
+import java.util.*;
+
+public class arraylist {
+    public static void main(String[] args){
+        ArrayList<Integer> list = new ArrayList<Integer>();
+
+        //add elements
+        list.add(1);
+        list.add(2);
+        list.add(3);
+
+        System.out.println(list);
+
+        //get elements
+        int element = list.get(0);
+        System.out.println(element);
+
+        // Add element between
+        list.add(2,33);
+        System.out.println(list);
+
+        //set element
+        list.set(0,99);
+        System.out.println(list);
+
+        //Delete/remove element
+        list.remove(2);
+        System.out.println(list);
+
+        //size
+        int size = list.size();
+        System.out.println(size);
+
+        //Loops
+        for(int i=0;i<list.size();i++){
+            System.out.println(list.get(i));
+        }
+        System.out.println();
+
+
+        // sorting
+        Collections.sort(list);
+        System.out.println(list);
+
+    }
+}
  
+
 
